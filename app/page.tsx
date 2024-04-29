@@ -2,6 +2,7 @@ import Featured from "@/components/home/featured";
 import FeaturedAd from "@/components/home/featured-ad";
 import Hero from "@/components/home/hero";
 import Trending from "@/components/home/trending";
+import Testimonials from "@/components/home/testimonials";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Featured />
       <FeaturedAd />
       <Trending />
+      <Testimonials />
     </div>
   );
 }
