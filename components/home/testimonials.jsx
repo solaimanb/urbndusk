@@ -15,6 +15,7 @@ import {
 
 import { Star, StarHalf } from "lucide-react";
 import React from "react";
+import { Separator } from "../ui/separator";
 
 const reviews = [
   {
@@ -92,8 +93,10 @@ const reviews = [
 const Testimonials = () => {
   return (
     <div className="container mx-auto mt-20 xl:mt-40">
-      <h1 className="flex items-center justify-center gap-x-4">
-        Excellence
+      <div className="flex flex-col items-center justify-center gap-4 text-sm">
+        <span className="font-semibold uppercase text-xl md:text-2xl text-center">
+          Excellence Over The Decade
+        </span>
         <span className="flex">
           <Star />
           <Star />
@@ -101,8 +104,10 @@ const Testimonials = () => {
           <Star />
           <Star />
         </span>
-        4.7 based on 1380+ reviews
-      </h1>
+        <span>4.7 based on 1380+ reviews</span>
+      </div>
+
+      <Separator className="mt-4" />
 
       <div className="mt-10">
         <Carousel>
