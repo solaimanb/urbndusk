@@ -26,7 +26,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           alt="product"
           height={500}
           width={500}
-          className="w-full h-full object-cover rounded-sm transition-all duration-500 ease-in-out"
+          className="img w-full h-full object-cover rounded-sm transition-all duration-500 ease-in-out"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         />

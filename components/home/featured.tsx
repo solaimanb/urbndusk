@@ -1,8 +1,6 @@
 import React from "react";
 import ProductCard from "../shared/product-card";
 
-import Shery from "sheryjs";
-
 const products = [
   {
     image: "/featured-i.jpg",
@@ -31,14 +29,6 @@ const products = [
 ];
 
 const Featured = () => {
-  Shery.imageEffect(".img", {
-    style: 6,
-    debug: true,
-  });
-
-  // Example usage of sheryjs effect
-  Shery.mouseFollower();
-
   return (
     <div className="container px-2 xl:px-0 grid grid-cols-2 md:grid-cols-4 gap-y-20 gap-10 mt-20 md:mt-40">
       {products.map((product, index) => (

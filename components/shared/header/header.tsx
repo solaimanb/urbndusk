@@ -52,11 +52,41 @@ const Header = () => {
                 />
                 <Button className="p-2" onClick={handleSearch}>
                   <Search />
-                </Button>
-              </div> */}
+                  </Button>
+                </div> */}
 
-              <div className="flex flex-col text-start gap-x-4 lg:text-xl">
+              <Separator />
+
+              <div className="flex flex-col text-start gap-x-4 text-4xl uppercase space-y-4 font-medium">
+                <Link href="/">Home</Link>
                 <Link href="/shop">Shop</Link>
+                <Link href="/about">About</Link>
+                <Link href="/contact">Contact</Link>
+              </div>
+
+              <Separator />
+
+              <div className="flex flex-col text-start gap-y-4 mt-10 lg:mt-20">
+                <Link href="/shipping-return">Shipping & Return</Link>
+                <Link href="/faq">FAQ</Link>
+                <Link href="/terms">Terms and Condition</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
+              </div>
+
+              <Separator />
+
+              <div className="mt-4 flex flex-col gap-y-2">
+                <Link href="/sign-in">
+                  <Button variant={"outline"} className="w-full">
+                    Login
+                  </Button>
+                </Link>
+
+                <Link href="/sign-up">
+                  <Button variant={"outline"} className="w-full">
+                    Sign Up
+                  </Button>
+                </Link>
               </div>
             </div>
 
