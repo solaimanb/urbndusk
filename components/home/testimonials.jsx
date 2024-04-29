@@ -91,7 +91,7 @@ const reviews = [
 
 const Testimonials = () => {
   return (
-    <div className="container mx-auto mt-20 lg:mt-40">
+    <div className="container mx-auto mt-20 xl:mt-40">
       <h1 className="flex items-center justify-center gap-x-4">
         Excellence
         <span className="flex">

@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import Banner1 from "@/public/banner-i.png";
 import Banner2 from "@/public/banner-ii.png";
 import Banner3 from "@/public/banner-iii.png";
+import Autoplay from "embla-carousel-autoplay";
 
 const images = [Banner1, Banner2, Banner3];
 
@@ -10,7 +13,16 @@ const Hero = () => {
   return (
     <div className="container mx-auto rounded-sm mt-4 px-2 xl:px-0">
       <div className="">
-        <Carousel>
+        <Carousel
+          opts={{
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+            }),
+          ]}
+        >
           <CarouselContent className="max-h-[50vh]">
             {images.map((image, index) => (
               <CarouselItem key={index} className="">
