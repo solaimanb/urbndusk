@@ -56,6 +56,10 @@ const config = {
           DEFAULT: "hsl(var(--custombg))",
           foreground: "hsl(var(--custombg-foreground))",
         },
+        urbnbrown: {
+          DEFAULT: "hsl(var(--urbnbrown))",
+          foreground: "hsl(var(--urbnbrown-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

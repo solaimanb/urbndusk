@@ -4,29 +4,33 @@ import ProductCard from "../shared/product-card";
 const products = [
   {
     image: "/featured-i.jpg",
-    name: "Heren ZARA",
+    secondaryImage: "/featured-i-hvr.jpg",
+    name: "CHAQUETA TRUCKER",
     price: "$170",
   },
   {
     image: "/featured-ii.jpg",
-    name: "FLYDAY Rela",
+    secondaryImage: "/featured-ii-hvr.jpg",
+    name: "CHAQUETA STWD",
     price: "$200",
   },
   {
     image: "/featured-iii.jpg",
-    name: "North Face",
+    secondaryImage: "/featured-iii-hvr.jpg",
+    name: "SOBRECAMISA SARGA",
     price: "$350",
   },
   {
     image: "/featured-iv.jpg",
-    name: "Hanbok Vent",
+    secondaryImage: "/featured-iv-hvr.jpg",
+    name: "RIPSTOP PARKA",
     price: "$300",
   },
 ];
 
 const Featured = () => {
   return (
-    <div className="container px-2 xl:px-0 grid grid-cols-2 md:grid-cols-4 gap-y-20 gap-10 mt-20">
+    <div className="container px-2 xl:px-0 grid grid-cols-2 md:grid-cols-4 gap-y-20 gap-10 mt-20 md:mt-40">
       {products.map((product, index) => (
         <ProductCard key={index} product={product} />
       ))}

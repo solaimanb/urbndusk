@@ -20,7 +20,7 @@ const FeaturedAd = () => {
         <Separator />
       </h2>
 
-      <div className="relative flex items-center justify-between w-full bg-black rounded-sm h-44 lg:h-72 p-10">
+      <div className="relative flex items-center justify-between w-full bg-black rounded-sm h-44 lg:h-72 px-16">
         <div className=" text-white space-y-4">
           <p className="text-2xl lg:text-3xl font-medium uppercase">Flat</p>
           <h2 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold flex justify-center gap-x-2 max-w-40">
