@@ -85,4 +85,6 @@
 body {
   background-color: hsl(var(--custombg));
   color: hsl(var(--custombg-foreground));
+
+  scroll-behavior: smooth !important;
 }

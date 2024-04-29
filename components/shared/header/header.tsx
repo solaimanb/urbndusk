@@ -25,8 +25,10 @@ const Header = () => {
             <AlignLeft size={30} />
           </SheetTrigger>
 
-          <div>
-            <Image src={Logo} alt="urbndusk" className="w-20 lg:w-28" />
+          <div className="">
+            <Link href="/">
+              <Image src={Logo} alt="urbndusk" className="w-20 lg:w-28" />
+            </Link>
           </div>
 
           <div className="flex items-center gap-x-4 lg:text-xl">
