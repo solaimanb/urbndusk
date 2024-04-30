@@ -1,3 +1,5 @@
+"use client";
+
 import Featured from "@/components/home/featured";
 import FeaturedAd from "@/components/home/featured-ad";
 import Hero from "@/components/home/hero";

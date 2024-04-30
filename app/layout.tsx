@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/header/header";
 import Footer from "@/components/shared/footer/footer";
+import { CounterStoreProvider } from "@/components/providers/counter-store-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} min-h-screen`}>
         <Header />
-        <main className="">{children}</main>
+        <CounterStoreProvider>{children}</CounterStoreProvider>
         <Footer />
       </body>
     </html>

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 
@@ -5,14 +7,23 @@ import Imageee from "@/public/featured-ii.jpg";
 import { Button } from "@/components/ui/button";
 import Featured from "@/components/home/featured";
 import { Separator } from "@/components/ui/separator";
+import { userStore } from "@/stores/user";
 
 const ProductIdPage = ({ params }: { params: { productId: string } }) => {
+  const user = userStore((state: any) => state.user);
+  const updateUser = userStore((state: any) => state.updateUser);
+
+  const handleAddToCart = () => {
+    console.log("Adding to cart:", params.productId);
+    updateUser({ id: user.id, cart: [...user.cart, params.productId] });
+  };
+
   return (
     <div className="container ">
       <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-4">
         <div className="border p-2">
           <Image
-            src={""}
+            src={Imageee}
             alt={params?.productId}
             height={1024}
             width={2024}
@@ -46,7 +57,11 @@ const ProductIdPage = ({ params }: { params: { productId: string } }) => {
           </div>
 
           <div className="">
-            <Button variant={"outline"} className="w-full rounded-sm">
+            <Button
+              variant={"outline"}
+              className="w-full rounded-sm"
+              onClick={handleAddToCart}
+            >
               Add to Cart
             </Button>
           </div>
